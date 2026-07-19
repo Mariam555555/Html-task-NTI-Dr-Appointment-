@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Doctor Appointment
+    </title>
+<style>
+    body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        align-items: flex-start;
+        background-color: white;
+        padding: 40px;
+        width: 850px;
+    }
+    .image-side img {
+        width: 320px;
+        height: auto;
+        margin-right: 40px;
+    }
+    .form-side {
+        flex: 1;
+    }
+    h2 {
+        border-bottom: 2px solid #d9534f;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+    }
+    .form-group {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        width: 140px;
+    }
+    .appointment-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    input[type="text"], input[type="date"], input[type="time"], textarea {
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    textarea {
+        width: 250px;
+        height: 60px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-side">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fc8.alamy.com%2Fcomp%2F2B32MYD%2Fcaucasian-male-doctor-on-white-background-2B32MYD.jpg&f=1&nofb=1&ipt=82ef606dcec7de8c73ffc83e068ed7c67ef3595c13a4403fc27b2b4f71cc0028" alt="Doctor">
+    </div>
+    
+    <div class="form-side">
+        <h2>Doctor Appointment Form</h2>
+        
+        <div class="form-group">
+            <label>Appointment Date:</label>
+            <input type="date">
+        </div>
+        <div class="form-group">
+            <label>Appointment Time:</label>
+            <input type="time">
+        </div>
+        <div class="form-group">
+            <label>Name:</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" placeholder="First">
+                <input type="text" placeholder="Last">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <span>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </span>
+        </div>
+        <div class="form-group">
+            <label>Phone:</label>
+            <input type="text" style="width: 250px;" placeholder="#####">
+        </div>
+        <div class="form-group">
+            <label>Address:</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" placeholder="city">
+                <input type="text" placeholder="state">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Your Query:</label>
+            <textarea></textarea>
+        </div>
+        <div class="form-group">
+            <label>Appointment Type:</label>
+            <div class="appointment-content">
+                <span>Select which appointment type(s) you require</span>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Cervix checkup</label>
+                    <label><input type="checkbox"> Heart checkup</label>
+                    <label><input type="checkbox"> Eye check-up</label>
+                    <label><input type="checkbox"> Hearing Test</label>
+                </div>
+            </div>
+        </div>
+        <button style="margin-left: 140px; padding: 5px 15px;">Send</button>
+    </div>
+</div>
+
+</body>
+</html>
