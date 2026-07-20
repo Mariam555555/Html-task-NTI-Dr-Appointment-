@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurghada Trips</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh; 
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #0A192F;
+            padding: 2vh 40px; 
+        }
+        .header h1 {
+            color: #A0783A;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 4vh; 
+            margin: 0 0 1vh 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .header p {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2vh;
+            margin: 0;
+            color: #E6E6E6;
+        }
+        .content-area {
+            flex: 1; 
+            padding: 2vh 40px;
+            background-color: white;
+            display: flex;
+            align-items: center; 
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr 1.5fr;
+            gap: 1.5vh 40px; 
+            width: 100%;
+            align-items: center;
+        }
+        .text-block {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 1.8vh; 
+            line-height: 1.3;
+            color: black;
+            white-space: pre-wrap;
+        }
+        .image-block img {
+            width: 100%;
+            height: 22vh; 
+            object-fit: cover;
+            border: 2px solid black;
+            display: block;
+        }
+
+        
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: 1fr 1.5fr;
+                gap: 1vh 20px;
+            }
+            .image-block img {
+                height: 12vh;
+            }
+            .text-block {
+                font-size: 1.5vh;
+            }
+            body {
+                overflow: auto; 
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+        <h1>Hurghada Trips</h1>
+        <p>this is our sea places for our clients this week we hope to be good for you</p>
+    </div>
+
+    
+    <div class="content-area">
+        <div class="grid-container">
+        
+            <div class="text-block">this is the first place
+dolphin house experience
+i hope it is good for you
+we will take you on a yacht
+to snorkel with wild dolphins
+for only 1200 LE
+with a 5 star lunch</div>
+            <div class="image-block">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.1ZQ-1rHbzZn6-NSKGfFTcQHaE8%3Fr%3D0%26pid%3DApi&f=1&ipt=8e97a9c44f29b6a722127fc1ffb2cc9e73be9ba4dbe8153814ee4acfff07c159&ipo=images" alt="Dolphins">
+            </div>
+
+            <div class="text-block">this is forth place
+it is Giftun island
+a paradise in the Red Sea
+we will take you for the visit
+to relax on the beautiful beach
+for a full day trip
+for only 1100 LE</div>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Island">
+            </div>
+
+        
+            <div class="text-block">this is second place
+it is Orange Bay
+we will take you for the visit this place
+to the stunning island beach
+with white sand and clear water
+for a full day
+for only 1500 LE</div>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Orange Bay">
+            </div>
+
+            <div class="text-block">this is third place
+glass bottom boat
+see the underwater world
+without getting wet
+a good trip for families
+for only 800 LE</div>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Glass bottom boat">
+            </div>
+
+            
+            <div class="text-block">this is an amazing place
+scuba diving intro
+we have good options for new divers
+to see colorful fish and corals
+with a professional instructor
+for only 1800 LE</div>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Scuba diving">
+            </div>
+
+            <div class="text-block">it is submarine
+go deep below
+we will take you for the visit this place
+for a 2 hour underwater tour
+for only 2000 LE</div>
+            <div class="image-block">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.im4FYVU2wscwCd0OwVga4AHaFL%3Fr%3D0%26pid%3DApi&f=1&ipt=5657616f645fc40abf35d4ffd585fdaa00ba01954c9d4ed0e8f4cdb4394abe58&ipo=images" alt="Submarine">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
